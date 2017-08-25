@@ -1,0 +1,32 @@
+{
+    "name": "eti/curso-php-composer",
+    "description": "Curso de PHP Composer",
+    "authors": [
+        {
+            "name": "Carlos Ferreira",
+            "email": "carlos@especializati.com.br",
+            "homepage": "http://www.especializati.com.br",
+            "role": "Web Developer"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.23",
+        "dompdf/dompdf": "^0.8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "files": [
+            "app/Helpers/functions.php"
+        ],
+        "classmap": [
+            "ClassUtils/",
+            "configs/"
+        ],
+        "psr-4": {
+            "ETI\\": "src/eti/",
+            "App\\": "app/"
+        }
+    }
+}
